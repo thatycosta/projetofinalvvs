@@ -21,4 +21,5 @@ dependencies {
         compile 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:2.4.1'
 	runtimeOnly 'com.h2database:h2'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
 }

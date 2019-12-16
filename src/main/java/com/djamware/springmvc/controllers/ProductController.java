@@ -13,12 +13,18 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class ProductController {
     
     @Autowired
     ProductRepository productRepository;
+
+    @RequestMapping("/")
+    public @ResponseBody String greeting() {
+        return "Welcome to this application!";
+    }
 
     @RequestMapping("/product")
     public String product(Model model) {
